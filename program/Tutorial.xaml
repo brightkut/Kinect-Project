@@ -1,0 +1,42 @@
+﻿<Window x:Class="Project3.Tutorial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project3"
+        mc:Ignorable="d"
+        Title="Tutorial" Height="450" Width="956.973">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <RotateTransform />
+                </Setter.Value>
+            </Setter>
+            <Setter Property="BorderBrush" Value="#5B3F29"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Foreground" Value="Yellow"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="LightGreen" Margin="0,0,0,-292">
+        <Label Content="Gesture"  FontWeight="ExtraBlack"  FontFamily="Rockwell"  FontSize="22" HorizontalAlignment="Left" Margin="27,22,0,0" VerticalAlignment="Top" Width="95" Height="44"/>
+      
+        <Image Margin="27,90,785,494" Source="fight.png" Stretch="Fill"/>
+
+        <Image Margin="27,375,785,209" Source="hello.png" Stretch="Fill"/>
+        <Image Margin="270,375,542,209" Source="home.png" Stretch="Fill"/>
+        <Image Margin="270,90,542,494" Source="send.png" Stretch="Fill"/>
+        <Image Margin="505,90,307,494" Source="yes.png" Stretch="Fill"/>
+        <Label Content="Fight" FontSize="28" HorizontalAlignment="Left" Margin="39,249,0,0" VerticalAlignment="Top"/>
+        <Label Content="Hello" FontSize="28" HorizontalAlignment="Left" Margin="39,574,0,0" VerticalAlignment="Top"/>
+        <Label Content="Home" FontSize="28" HorizontalAlignment="Left" Margin="270,574,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.728,1.716"/>
+        <Label Content="Send Message" FontSize="28" HorizontalAlignment="Left" Margin="258,249,0,0" VerticalAlignment="Top"/>
+        <Label Content="Surrender" FontSize="28" HorizontalAlignment="Left" Margin="510,249,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="back" Content="Back" Background="#5B3F29" HorizontalAlignment="Left" Margin="774,582,0,0" FontFamily="Rockwell"  FontSize="22" VerticalAlignment="Top" Width="106" Height="40" Click="Button_Click" RenderTransformOrigin="2.087,-3.386"/>
+        <Label Content="Hand Up" FontSize="28" HorizontalAlignment="Left" Margin="505,574,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.728,1.716"/>
+
+
+    </Grid>
+</Window>
